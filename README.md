@@ -4,6 +4,14 @@
 
 ルートディレクトリ
 
+ローカル開発
+
+```sh
+.env.local
+```
+
+デプロイ時
+
 ```sh
 .env.development
 ```
