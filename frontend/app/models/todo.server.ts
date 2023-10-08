@@ -12,7 +12,6 @@ export type Todos = {
 };
 
 export async function getTodos(): Promise<Array<Todos>> {
-  console.log(defaultUrl);
   const res = await fetch(defaultUrl, {
     method: "GET",
     headers: {
