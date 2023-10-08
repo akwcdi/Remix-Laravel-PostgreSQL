@@ -15,7 +15,8 @@ class TodoController extends Controller
         try {
             $todos = Todo::all();
 
-            return response()->json($todos, Response::HTTP_OK);
+            return response()->json([], Response::HTTP_OK);
+            // return response()->json($todos, Response::HTTP_OK);
         } catch (Exception $e) {
             return response($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
         }
